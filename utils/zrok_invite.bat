@@ -5,7 +5,7 @@ IF NOT EXIST enabled.txt (
 	pause
 	echo Type the random letters after the zrok enable part on the page after sign up
 	set /p "id=Enter id: "
-	zrok enable %id%
+	.\zrok enable %id%
 	echo yes > enabled.txt
 ) ELSE (
 	break
